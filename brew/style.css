@@ -1,0 +1,301 @@
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#f4eadb;
+  color:#865d43;
+  line-height:1.7;
+}
+
+img{
+  max-width:100%;
+  display:block;
+}
+
+a{
+  text-decoration:none;
+}
+
+.hero{
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.15)),
+    url("img/商品/coffee2.jpg") center/cover no-repeat;
+}
+
+.hero h1{
+  font-size:clamp(56px, 10vw, 140px);
+  line-height:0.95;
+  letter-spacing:.08em;
+  margin-bottom:20px;
+  color:#fff; /* ←これ超重要 */
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.hero h1{
+  color:#fff;
+  text-shadow:
+    0 6px 20px rgba(0,0,0,0.45),
+    0 2px 4px rgba(0,0,0,0.25);
+}
+
+.hero-copy{
+  color:#fff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  font-size:clamp(18px, 2vw, 28px);
+  margin-top:16px;
+  color:#fff;
+  opacity:0.9;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.35);
+}
+
+.section-inner,
+.hero-inner{
+  width:min(100% - 32px, 1100px);
+  margin:0 auto;
+  text-align: center;
+}
+
+section{
+  padding:96px 0;
+}
+
+h1,h2,h3,p,ul{
+  margin:0;
+}
+
+ul{
+  padding-left:1.2em;
+  
+}
+
+.problem,
+.before-after{
+  background:#bfb174;
+}
+
+.solution,
+.training{
+  background:#d08a44;
+}
+
+.problem,
+.solution,
+.before-after,
+.training{
+  padding:120px 0;
+}
+
+.problem h2,
+.solution h2,
+.before-after h2,
+.training h2,
+.cta h2{
+  color:#d23a3a;
+  font-size:48px;
+  letter-spacing:.16em;
+  margin-bottom:24px;
+}
+
+.problem p,
+.solution p{
+  margin-top: 16px;
+  font-size: 20px;
+}
+
+.problem .p-1,
+.problem .p-2,
+.solution .s-1,
+.solution .s-2{
+  font-size: 25px;
+  margin-top: 32px;
+}
+
+.before-after h2{
+    font-size: 48px;
+}
+
+.ba-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:24px;
+  margin-top:24px;
+}
+
+.ba-box{
+  background:#eeeeee;
+  padding:32px;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:16px;
+  margin-bottom: 100px;
+}
+
+.ba-box h3{
+  margin-bottom:35px;
+  font-size: 30px;
+}
+
+.before-after .b-2{
+  font-size: 25px;
+  color: #6b4f3f;
+}
+
+.ba-box li{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.training-list{
+  display:grid;
+  gap:24px;
+}
+
+.training-item{
+  background:#ffffff;
+  padding:50px;
+  border-radius:16px;
+  border:1px solid rgba(255,255,255,.08);
+  margin-bottom: 100px;
+}
+
+.training-item .num{
+  display:inline-block;
+  color:#d23a3a;
+  font-size:30px;
+  letter-spacing:.16em;
+  margin-bottom:12px;
+}
+
+.training-item h3{
+  margin-bottom:32px;
+  font-size: 28px;
+}
+
+.training-item span{
+    color: #ff9100;
+}
+
+.training-item p{
+    font-size: 20px;
+    line-height: 1.9;
+}
+
+.training .t-2{
+  font-size: 25px;
+}
+
+.training-photo{
+  padding:100px 0;
+}
+
+.training-photo img{
+  border-radius:18px;
+}
+
+.caption{
+  margin-top:12px;
+  font-size:16px;
+  color:#bfbfbf;
+  /* text-align: right; */
+}
+
+.cta{
+  text-align:center;
+  padding:100px 0;
+}
+
+.cta .section-inner h2{
+    font-size: 48px;
+    margin-bottom: 32px;
+}
+
+.cta p{
+  margin-top:20px;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+.cta .c-1{
+  font-size: 25px;
+}
+
+.cta-button{
+  display:inline-block;
+  margin-top:0px;
+  background:#ffffff;
+  color:#fe6e07;
+  padding:50px 80px;
+  border-radius:999px;
+  font-weight:bold;
+  font-size: 40px;
+}
+
+.cta-note{
+  list-style: none;
+  padding: 0;
+  margin-top: 45px;
+  color: #5f4a36;
+}
+
+.cta-note li{
+  margin-top:10px;
+  font-size: 18px;
+}
+
+
+/* 色まとめ */
+.problem,
+.before-after{
+  background:#efe1cf;
+}
+.solution,
+.training,
+.cta{
+  background:#f4eadb;
+}
+.problem h2,
+.solution h2,
+.before-after h2,
+.training h2,
+.cta h2{
+  color:#a66a2c;
+}
+.cta-button{
+  background:#a66a2c;
+  color:#fff;
+}
+.training-item span{
+  color:#a66a2c;
+}
+
+
+
+@media (max-width: 767px){
+  section{
+    padding:72px 0;
+  }
+
+  .ba-grid{
+    grid-template-columns:1fr;
+  }
+
+  .ba-box,
+  .training-item{
+    padding:24px;
+  }
+
+  .cta{
+    padding:88px 0;
+  }
+
+  .cta-button{
+    width:100%;
+    max-width:320px;
+  }
+}
