@@ -35,7 +35,7 @@
 
       <div class="works-grid">
 
-        <a href="reborn/index.html" class="work-card">
+        <a href="reborn/index.html" class="work-card" onclick="trackEvent('click', 'REBORN')">
           <img src="img/reborn画像/1.reborn.png" alt="REBORN">
           <div class="work-content">
             <div class="work-title">REBORN</div>
@@ -43,7 +43,7 @@
           </div>
         </a>
 
-        <a href="brew/index.html" class="work-card">
+        <a href="brew/index.html" class="work-card" onclick="trackEvent('click', 'BREW')">
           <img src="img/brew画像/1.brew.png" alt="BREW">
           <div class="work-content">
             <div class="work-title">BREW</div>
@@ -51,7 +51,7 @@
           </div>
         </a>
 
-        <a href="lumiel/index.html" class="work-card">
+        <a href="lumiel/index.html" class="work-card" onclick="trackEvent('click', 'LUMIEL')">
           <img src="img/lumiel画像/2.lumiel.png" alt="LUMIEL">
           <div class="work-content">
             <div class="work-title">LUMIEL</div>
@@ -100,7 +100,7 @@
         <input type="text" name="name" placeholder="お名前" required> 
         <input type="email" name="email" placeholder="メールアドレス" required>
         <textarea name="message" placeholder="お問い合わせ内容" required></textarea> 
-        <button type="submit">送信する</button>
+        <button type="submit" onclick="trackEvent('click', 'contact_submit')">送信する</button>
 
         <p>通常2営業日以内にご返信いたします。<br>
         万が一返信がない場合は迷惑メールをご確認ください。</p>
