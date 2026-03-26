@@ -48,12 +48,35 @@ a {
   margin: 0 auto;
   padding: 0 28px 88px;
   background: var(--panel);
+  position: relative;
+  overflow: hidden;
+}
+
+.page::before {
+  content: "";
+  position: absolute;
+  top: -120px;
+  left: -120px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.35) 0%,
+    rgba(255, 255, 255, 0.12) 40%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  pointer-events: none;
+  filter: blur(40px);
 }
 
 /* HERO */
 .hero {
-  padding-top: 88px;
+  padding: 160px 20px 120px;
   text-align: center;
+}
+
+.hero h1 {
+  margin-bottom: 16px;
 }
 
 .logo {
@@ -192,13 +215,13 @@ a {
   justify-content: center;
   min-width: 132px;
   height: 48px;
-  padding: 0 28px;
+  padding: 16px 36px;
   background: var(--button);
   color: #fff;
   border-radius: 4px;
   font-family: "Cormorant Garamond", serif;
   font-size: 1.05rem;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.2em;
   transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
@@ -234,7 +257,7 @@ a {
   }
 
   .hero {
-    padding-top: 76px;
+    padding-top: 240px;
   }
 
   .logo {
@@ -250,10 +273,26 @@ a {
 
   .concept-title {
     font-size: 1.04rem;
+    line-height: 2.2;
+  }
+
+  .menu-list {
+  max-width: 260px;
   }
 
   .menu-item {
+    grid-template-columns: 92px 88px;
+    justify-content: center;
+    column-gap: 18px;
     font-size: 0.88rem;
+  }
+
+  .menu-item .price {
+    text-align: right;
+  }
+
+  .style {
+    padding-top: 140px; /* 128 → 140くらい */
   }
 
   .style-copy {

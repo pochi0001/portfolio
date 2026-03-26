@@ -20,9 +20,6 @@ a{
 }
 
 .hero{
-    background-image: url(/img/hero.jpg);
-    background-size: cover;
-    background-position: center;
     position: relative;
     min-height:100svh;
     display:flex;
@@ -253,5 +250,134 @@ ul{
   .cta-button{
     width:100%;
     max-width:320px;
+  }
+}
+
+@media (max-width: 767px){
+  .hero{
+  min-height: 85svh;
+  padding: 0;
+  align-items: center;
+  background-position: center top;
+  }
+
+  .hero-inner{
+  width: min(100% - 28px, 420px);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  }
+
+  .hero-kicker{
+    font-size: 18px;
+    letter-spacing: .12em;
+    line-height: 1.5;
+    margin-bottom: 12px;
+  }
+
+  .hero h1{
+    font-size: 56px;
+    margin-bottom: 16px;
+  }
+
+  .hero-copy{
+    padding-top: 0;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .problem,
+  .solution,
+  .before-after,
+  .training,
+  .cta{
+    padding: 72px 0;
+  }
+
+  .problem h2,
+  .solution h2,
+  .before-after h2,
+  .training h2,
+  .cta h2{
+    font-size: 24px;
+    letter-spacing: .1em;
+    margin-bottom: 20px;
+  }
+
+  .problem p,
+  .solution p{
+    font-size: 16px;
+    padding-bottom: 28px;
+    margin-top: 0;
+  }
+
+  .ba-box{
+    margin-bottom: 24px;
+    padding: 24px 20px;
+  }
+
+  .ba-box h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .ba-box li{
+    font-size: 16px;
+    padding-bottom: 14px;
+  }
+
+  .training-item{
+    margin-bottom: 24px;
+    padding: 24px 20px;
+  }
+
+  .training-item .num{
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .training-item h3{
+    font-size: 24px;
+    margin-bottom: 18px;
+    line-height: 1.5;
+  }
+
+  .training-item p{
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .training-photo{
+    padding: 40px 0 0;
+  }
+
+  .caption{
+    font-size: 14px;
+  }
+
+  .cta .section-inner h2{
+    font-size: 24px;
+    line-height: 1.6;
+    letter-spacing: .03em;
+    max-width: 11em;
+    margin: 0 auto 32px;
+    padding-bottom: 100px;
+  }
+
+  .cta p{
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 28px;
+    line-height: 1.8;
+  }
+
+  .cta-button{
+    max-width: 260px;
+    width: 100%;
+    padding: 24px 20px;
+    font-size: 22px;
+  }
+
+  .cta-note li{
+    font-size: 15px;
   }
 }
